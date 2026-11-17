@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Victor Eduardo, estudante de ADS no Senac em busca de estágio em desenvolvimento Java. Estudos e projetos em Java, HTML e CSS.">
+<meta name="theme-color" content="#141a3a">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:title" content="Victor Eduardo de Araujo Silva | Estágio em Java">
+<meta property="og:description" content="Estudante de ADS no Senac em busca de estágio em desenvolvimento Java. Estudos e projetos em Java, HTML e CSS.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>☕</text></svg>">
+<title>Victor Eduardo de Araujo Silva | Estágio em Java ☕</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<noscript><style>.rv{opacity:1!important;transform:none!important}</style></noscript>
+<style>
+:root{--bg:#141a3a;--card:#1e2756;--ink:#f6f0e4;--muted:#b4b9d6;--coffee:#ffc857;--coral:#ff6b6b;--mint:#7ee0c3;--line:#f6f0e4;
+--display:"Bricolage Grotesque","Trebuchet MS",sans-serif;--body:"Figtree",system-ui,sans-serif;--mono:"DM Mono",ui-monospace,monospace}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:5rem}
+body{background:var(--bg);color:var(--ink);font:400 1.05rem/1.65 var(--body);overflow-x:hidden;
+background-image:radial-gradient(rgba(246,240,228,.09) 1px,transparent 1px);background-size:26px 26px}
+a{color:inherit}
+.wrap{width:min(1100px,92%);margin-inline:auto}
+:focus-visible{outline:3px solid var(--coffee);outline-offset:3px;border-radius:6px}
+.skip-link{position:absolute;left:-999px;background:var(--coffee);color:#141a3a;padding:.6rem 1rem;z-index:99}
+.skip-link:focus{left:1rem;top:1rem}
+#progress{position:fixed;top:0;left:0;height:5px;width:100%;transform-origin:left;transform:scaleX(0);background:linear-gradient(90deg,var(--coral),var(--coffee),var(--mint));z-index:60}
+/* header */
+.header{position:sticky;top:0;z-index:50;display:flex;align-items:center;justify-content:space-between;padding:1rem 0;backdrop-filter:blur(10px);background:linear-gradient(var(--bg) 40%,transparent)}
+.brand{font:800 1.3rem var(--display);text-decoration:none}
+.brand b{color:var(--coral);display:inline-block;transition:transform .4s}
+.brand:hover b{transform:rotate(360deg)}
+nav{display:flex;gap:.4rem;align-items:center}
+nav a{text-decoration:none;font-weight:600;padding:.4rem .9rem;border-radius:99px;transition:background .2s,color .2s}
+nav a:hover,nav a.on{background:var(--ink);color:var(--bg)}
+nav .nav-contact{border:2px solid var(--coffee);color:var(--coffee)}
+.menu-toggle{display:none;font:600 1rem var(--body);background:none;color:var(--ink);border:2px solid var(--ink);border-radius:99px;padding:.4rem .9rem;cursor:pointer}
+/* hero */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:3rem;align-items:center;min-height:calc(100vh - 5rem);padding:2rem 0 4rem;position:relative}
+.wave{display:inline-block;transform-origin:70% 70%;animation:wave 2.2s 1s 2}
+@keyframes wave{0%,60%,100%{transform:rotate(0)}10%,30%{transform:rotate(16deg)}20%,40%{transform:rotate(-10deg)}50%{transform:rotate(10deg)}}
+.badge{display:inline-flex;gap:.6rem;align-items:center;font:500 .92rem var(--mono);background:var(--card);border:2px solid var(--line);border-radius:99px;padding:.35rem 1rem;box-shadow:4px 4px 0 var(--mint);transform:rotate(-2deg)}
+.dot{width:.6rem;height:.6rem;border-radius:50%;background:var(--mint);animation:pulse 1.6s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(126,224,195,.8)}100%{box-shadow:0 0 0 12px rgba(126,224,195,0)}}
+h1{font:800 clamp(2.6rem,6.4vw,5rem)/1 var(--display);letter-spacing:-.03em;margin:1.4rem 0 1rem}
+h1 .name{display:block;font-size:.5em;letter-spacing:-.01em;color:var(--coffee);margin-top:.5rem}
+.hero-description{max-width:34rem;color:var(--muted);font-size:1.15rem}
+.hero-actions{display:flex;gap:1rem;flex-wrap:wrap;align-items:center;margin-top:2rem}
+.button{display:inline-block;text-decoration:none;font-weight:600;background:var(--coffee);color:#141a3a;border:2px solid var(--line);border-radius:14px;padding:.8rem 1.4rem;box-shadow:5px 5px 0 var(--coral);transition:transform .15s,box-shadow .15s}
+.button:hover{transform:translate(3px,3px);box-shadow:2px 2px 0 var(--coral)}
+.button.ghost{background:transparent;color:var(--ink);box-shadow:5px 5px 0 var(--mint)}
+.button.ghost:hover{box-shadow:2px 2px 0 var(--mint)}.cafe{margin-top:1.4rem;font:500 .9rem var(--mono);background:none;border:0;color:var(--muted);cursor:pointer}
+.cafe:hover{color:var(--coffee)}
+.cafe span{display:inline-block}
+.cafe.pop span{animation:pop .4s}
+@keyframes pop{50%{transform:scale(1.8) rotate(-15deg)}}
+/* code window: o momento memorável */
+.code{position:relative;background:#0d1230;border:2px solid var(--line);border-radius:18px;box-shadow:10px 10px 0 var(--coral);transform:rotate(2deg);transition:transform .4s}
+.code:hover{transform:rotate(0)}
+.code-bar{display:flex;gap:.45rem;align-items:center;padding:.7rem 1rem;border-bottom:2px solid var(--line);font:500 .8rem var(--mono);color:var(--muted)}
+.code-bar i{width:.8rem;height:.8rem;border-radius:50%;background:var(--coral)}.code-bar i:nth-child(2){background:var(--coffee)}.code-bar i:nth-child(3){background:var(--mint)}
+.code-bar em{margin-left:auto;font-style:normal}
+pre{font:400 .95rem/1.75 var(--mono);padding:1.2rem 1.3rem;min-height:15.5rem;white-space:pre-wrap}
+.k{color:var(--coral)}.s{color:var(--mint)}.c{color:#7f86b3}.f{color:var(--coffee)}
+.caret{display:inline-block;width:.6ch;height:1.1em;background:var(--coffee);vertical-align:text-bottom;animation:blink 1s steps(2) infinite}
+@keyframes blink{50%{opacity:0}}
+.sticker{position:absolute;font-size:2.4rem;filter:drop-shadow(3px 3px 0 rgba(0,0,0,.4));animation:float 5s ease-in-out infinite;will-change:transform}
+.s1{top:-1.6rem;right:-.8rem}.s2{bottom:-1.8rem;left:-1.2rem;animation-delay:-2s}.s3{top:45%;right:-2rem;animation-delay:-3.5s}
+@keyframes float{50%{translate:0 -14px}}
+/* marquee */
+.marquee{border-block:2px solid var(--line);background:var(--coffee);color:#141a3a;overflow:hidden;transform:rotate(-1.2deg);margin:1rem -2%;white-space:nowrap}
+.marquee div{display:inline-block;padding:.8rem 0;font:800 1.5rem var(--display);animation:slide 40s linear infinite}
+.marquee:hover div{animation-play-state:paused}
+@keyframes slide{to{transform:translateX(-50%)}}
+/* sections */
+.section{padding:6rem 0 2rem}
+h2{font:800 clamp(2.2rem,5vw,3.6rem)/1.05 var(--display);letter-spacing:-.025em;margin-bottom:1rem}
+h2 small{font-size:.7em}
+.about{display:grid;grid-template-columns:1fr 1fr;gap:3rem}
+.about p{color:var(--muted);max-width:36rem}
+.paper{background:var(--card);border:2px solid var(--line);border-radius:18px;padding:1.6rem;box-shadow:8px 8px 0 var(--mint);transform:rotate(-1.5deg)}
+.paper h3{font:800 1.2rem var(--display);margin:1.2rem 0 .5rem}.paper h3:first-child{margin-top:0}
+.paper ul{list-style:none;padding:0}
+.paper li{padding:.35rem 0;border-bottom:1px dashed rgba(246,240,228,.25)}
+.muted{color:var(--coffee);font:500 .85rem var(--mono)}
+.skills-grid,.projects-grid{display:grid;gap:1.6rem;margin-top:2.4rem}
+.skills-grid{grid-template-columns:repeat(3,1fr)}
+.projects-grid{grid-template-columns:repeat(2,1fr)}
+.skill-card,.project-card{position:relative;background:var(--card);border:2px solid var(--line);border-radius:18px;padding:1.6rem;transform-style:preserve-3d;transition:transform .2s ease-out,box-shadow .2s}
+.skill-card{box-shadow:6px 6px 0 var(--coral)}
+.skill-card:nth-child(2){box-shadow:6px 6px 0 var(--coffee)}.skill-card:nth-child(3){box-shadow:6px 6px 0 var(--mint)}
+.skill-card:hover{box-shadow:10px 10px 0 var(--ink)}
+.skill-symbol{font-size:2.6rem;display:block;transition:transform .4s}
+.skill-card:hover .skill-symbol{transform:rotate(-12deg) scale(1.2)}
+.skill-card h3,.project-card h3{font:800 1.4rem/1.15 var(--display);margin:.8rem 0 .5rem}
+.skill-card p,.project-card p{color:var(--muted)}
+.project-card{padding-top:2.6rem;overflow:hidden}
+.project-card::before{content:attr(data-tab);position:absolute;top:0;left:0;right:0;padding:.35rem 1.2rem;background:var(--tab,var(--coral));color:#141a3a;font:500 .8rem var(--mono);border-bottom:2px solid var(--line)}
+.project-card:nth-child(2){--tab:var(--coffee)}.project-card:nth-child(3){--tab:var(--mint)}.project-card:nth-child(4){--tab:#c9a7ff}
+.project-card:hover{box-shadow:0 0 0 3px var(--tab,var(--coral))}
+.project-technologies{font:500 .85rem var(--mono);color:var(--coffee)!important;margin:.8rem 0}
+.project-card a{font-weight:600;text-decoration:none;border-bottom:3px solid var(--tab,var(--coral));transition:padding .2s}
+.project-card a:hover{padding-right:.6rem}
+.project-links{display:flex;flex-wrap:wrap;gap:.6rem 1.6rem}
+.project-category{display:none}
+/* contact */
+.contact-section{padding:7rem 0 5rem}
+.contact-content{display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center}
+.contact-content h2{font-size:clamp(2.6rem,6vw,4.6rem)}
+.social-links{display:grid;gap:1rem}
+.social-link{display:flex;justify-content:space-between;align-items:center;gap:1rem;text-decoration:none;font:800 1.25rem var(--display);background:var(--card);border:2px solid var(--line);border-radius:16px;padding:1.1rem 1.4rem;box-shadow:5px 5px 0 var(--coral);transition:transform .15s,box-shadow .15s,background .2s;overflow-wrap:anywhere}
+.social-link small{display:block;font:500 .8rem var(--mono);color:var(--muted)}
+.social-link:nth-child(2){box-shadow:5px 5px 0 var(--coffee)}.social-link:nth-child(3){box-shadow:5px 5px 0 var(--mint)}
+.social-link:hover{transform:translate(4px,4px) rotate(.6deg);box-shadow:1px 1px 0 var(--ink);background:#27327a}
+.social-arrow{font-size:1.5rem;transition:transform .25s}.social-link:hover .social-arrow{transform:rotate(45deg)}
+.footer{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding:2rem 0 3rem;border-top:2px dashed rgba(246,240,228,.3);color:var(--muted)}
+/* reveal */
+.rv{opacity:0;transform:translateY(34px) rotate(var(--r,0deg));transition:opacity .7s,transform .7s cubic-bezier(.2,.9,.3,1.2);transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+.paper.rv.in{transform:rotate(-1.5deg)}
+/* depois da entrada, devolve a cada elemento a sua transição de interação (tilt e hover ficam ágeis) */
+.rvd{transition-delay:0s}
+.skill-card.rvd,.project-card.rvd{transition:transform .2s ease-out,box-shadow .2s}
+.social-link.rvd{transition:transform .15s,box-shadow .15s,background .2s}
+@media(max-width:860px){
+.hero,.about,.contact-content{grid-template-columns:1fr}.skills-grid,.projects-grid{grid-template-columns:1fr}
+.menu-toggle{display:block}
+nav{display:none;position:absolute;top:100%;right:0;left:0;flex-direction:column;align-items:stretch;background:var(--bg);border:2px solid var(--line);border-radius:16px;padding:.6rem}
+nav.open{display:flex}nav a{text-align:center}.sticker{display:none}.hero{min-height:auto}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}html{scroll-behavior:auto}.rv{opacity:1;transform:none}}
+</style>
+</head>
+<body>
+<div id="progress"></div>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="header wrap">
+  <a class="brand" href="#inicio" aria-label="Victor, início">victor<b>.</b>java</a>
+  <button class="menu-toggle" aria-expanded="false" aria-controls="navigation">Menu ☰</button>
+  <nav id="navigation" aria-label="Navegação principal">
+    <a href="#sobre">Sobre</a><a href="#conhecimentos">Conhecimentos</a><a href="#projetos">Projetos</a><a href="#ia">Este site</a><a class="nav-contact" href="#contato">Contato 👋</a>
+  </nav>
+</header>
+<main id="conteudo">
+  <section id="inicio" class="hero wrap">
+    <div>
+      <p class="badge"><span class="dot"></span> aberto a estágio em Java</p>
+      <h1>E aí! <span class="wave">👋</span> Eu escrevo código em Java<span style="color:var(--coral)">.</span> <span class="name">Victor Eduardo de Araujo Silva</span></h1>
+      <p class="hero-description">Estudante de Análise e Desenvolvimento de Sistemas no Centro Universitário Senac. Busco minha primeira oportunidade de estágio em desenvolvimento de software, com foco em Java. 🚀</p>
+      <div class="hero-actions"><a class="button" href="#projetos">Ver projetos 👀</a><a class="button ghost" href="https://github.com/victor7z/" target="_blank" rel="noopener noreferrer">GitHub 🐙</a></div>
+      <button class="cafe" type="button"><span>☕</span> cafés tomados enquanto estudava: <b id="cafes" aria-live="polite">0</b> (clica aí)</button>
+    </div>
+    <div class="code">
+      <div class="code-bar"><i></i><i></i><i></i><em>Victor.java</em></div>
+      <pre id="typed" role="img" aria-label="Classe Java com os dados do Victor: foco em Java, buscando estágio, aprendendo sempre."></pre>
+      <span class="sticker s1" aria-hidden="true">☕</span><span class="sticker s2" aria-hidden="true">🚀</span><span class="sticker s3" aria-hidden="true">✨</span>
+    </div>
+  </section>
+  <div class="marquee" aria-hidden="true"><div>Java ☕ &nbsp; POO 🧱 &nbsp; HTML 🎨 &nbsp; CSS ✨ &nbsp; Git 🌱 &nbsp; GitHub 🐙 &nbsp; IntelliJ 💡 &nbsp; Lógica 🧠 &nbsp; Java ☕ &nbsp; POO 🧱 &nbsp; HTML 🎨 &nbsp; CSS ✨ &nbsp; Git 🌱 &nbsp; GitHub 🐙 &nbsp; IntelliJ 💡 &nbsp; Lógica 🧠 &nbsp;</div></div>
+  <section id="sobre" class="section wrap about">
+    <div class="rv"><h2>Sobre mim <small>🧑‍💻</small></h2><p>Sou estudante de Análise e Desenvolvimento de Sistemas no Centro Universitário Senac, com conclusão prevista para julho de 2027. Busco uma oportunidade de estágio em desenvolvimento de software, com foco em Java. Desenvolvo meus conhecimentos por meio de cursos e exercícios práticos de lógica de programação e orientação a objetos. No DevDojo, estudo classes, objetos, encapsulamento, construtores, sobrecarga e membros estáticos. Quero aplicar o que estou aprendendo, colaborar com uma equipe e evoluir como desenvolvedor. 💪</p></div>
+    <div class="paper rv" style="--d:.15s"><h3>🎓 Formação</h3><p>Análise e Desenvolvimento de Sistemas<br>Centro Universitário Senac · EAD<br>2025 — julho de 2027 (conclusão prevista)</p><h3>📚 Estudos complementares</h3><ul><li>Java — DevDojo <span class="muted">(em andamento)</span></li><li>HTML e CSS — Curso em Vídeo e Alura</li><li>Git e GitHub — Curso em Vídeo</li><li>Excel — Curso em Vídeo e Cursa</li><li>Empreendedorismo — Fundação Bradesco</li></ul></div>
+  </section>
+  <section id="conhecimentos" class="section wrap">
+    <div class="rv"><h2>Conhecimentos 🧰</h2><p style="color:var(--muted)">Conceitos e ferramentas aplicados nos meus estudos e exercícios.</p></div>
+    <div id="skills-list" class="skills-grid">
+      <article class="skill-card tilt rv"><span class="skill-symbol" aria-hidden="true">☕</span><h3>Java e lógica de programação</h3><p>Em estudo e prática: tipos de dados, operadores, condicionais, laços, arrays e arrays multidimensionais.</p></article>
+      <article class="skill-card tilt rv" style="--d:.12s"><span class="skill-symbol" aria-hidden="true">🧱</span><h3>Programação orientada a objetos</h3><p>Em estudo: classes, objetos, métodos, encapsulamento, construtores, sobrecarga e membros estáticos.</p></article>
+      <article class="skill-card tilt rv" style="--d:.24s"><span class="skill-symbol" aria-hidden="true">🛠️</span><h3>Web e ferramentas</h3><p>HTML e CSS para criar e estilizar páginas. Conhecimentos básicos de Git e GitHub: versionamento, commits e publicação de repositórios. IntelliJ IDEA nos estudos de Java.</p></article>
+    </div>
+  </section>
+  <section id="projetos" class="section wrap">
+    <div class="rv"><h2>Projetos selecionados 📁</h2><p style="color:var(--muted)">Prática em Java e projetos web educacionais. Repositórios públicos para explorar.</p></div>
+    <div id="projects-list" class="projects-grid">
+      <article class="project-card tilt rv" data-tab="📂 estudos práticos · em andamento"><h3>Exercícios Java ☕</h3><p>Exercícios próprios para praticar lógica e POO. O repositório reúne atividades com condicionais, repetição, arrays, classes, objetos, métodos e validação de dados.</p><p class="project-technologies">Java</p><a href="https://github.com/victor7z/exercicios-java" target="_blank" rel="noopener noreferrer">Ver repositório ↗</a></article>
+      <article class="project-card tilt rv" style="--d:.12s" data-tab="📂 estudos de curso · em andamento"><h3>Maratona Java — DevDojo 🏃</h3><p>Registro dos estudos da Maratona Java Virado no Jiraya, da DevDojo Academy. Reúne códigos e exercícios sobre fundamentos da linguagem e introdução à orientação a objetos.</p><p class="project-technologies">Java</p><a href="https://github.com/victor7z/curso-java-devdojo" target="_blank" rel="noopener noreferrer">Ver repositório ↗</a></article>
+      <article class="project-card tilt rv" data-tab="📂 projeto educacional · curso em vídeo"><h3>História do Android 🤖</h3><p>Página criada no Capítulo 17 do Curso em Vídeo sobre a história do mascote do Android, o Bugdroid, e a curiosidade das versões batizadas com nomes de doces. Estrutura semântica com cabeçalho, navegação, artigo e conteúdo complementar.</p><p class="project-technologies">HTML · CSS</p><div class="project-links"><a href="https://victor7z.github.io/projeto-android/" target="_blank" rel="noopener noreferrer">Ver online ↗</a><a href="https://github.com/victor7z/projeto-android" target="_blank" rel="noopener noreferrer">Ver repositório ↗</a></div></article>
+      <article class="project-card tilt rv" style="--d:.12s" data-tab="📂 projeto educacional · curso em vídeo"><h3>Cordel Moderno 📜</h3><p>Página criada para o Curso em Vídeo que apresenta o poema Cordel Moderno, de Milton Duarte, em seções de texto e imagens de fundo.</p><p class="project-technologies">HTML · CSS</p><div class="project-links"><a href="https://victor7z.github.io/projeto-cordel/" target="_blank" rel="noopener noreferrer">Ver online ↗</a><a href="https://github.com/victor7z/projeto-cordel" target="_blank" rel="noopener noreferrer">Ver repositório ↗</a></div></article>
+    </div>
+  </section>
+  <section id="ia" class="section wrap about">
+    <div class="rv"><h2>Sobre este site <small>🤖</small></h2><p>Este site foi feito com a ajuda de inteligência artificial. Ele marca o começo dos meus estudos com IA: aqui eu aplico, na prática, o que vou aprendendo sobre usar IA no desenvolvimento de software. A IA ajuda com o código e o visual, mas as informações sobre mim, meus estudos e meus projetos são minhas. Conforme eu aprender mais, o site evolui junto. 🚀</p></div>
+    <div class="paper rv" style="--d:.15s"><h3>🧪 Como ele foi feito</h3><ul><li>🤖 Código e visual feitos com ajuda de IA</li><li>🧠 Conteúdo, projetos e estudos: meus</li><li>🌱 Primeiro passo nos meus estudos com IA</li></ul></div>
+  </section>
+  <section id="contato" class="contact-section wrap">
+    <div class="contact-content">
+      <div class="rv"><h2>Vamos nos conectar? 🤝</h2><p style="color:var(--muted)">Para conversar sobre estágio em Java, envie um e-mail ou conecte-se comigo no LinkedIn. Meus estudos e códigos estão no GitHub.</p></div>
+      <div class="social-links">
+        <a id="github-link" class="social-link rv" href="https://github.com/victor7z/" target="_blank" rel="noopener noreferrer"><span><small>código e projetos</small>🐙 GitHub</span><span class="social-arrow" aria-hidden="true">↗</span></a>
+        <a id="linkedin-link" class="social-link rv" style="--d:.1s" href="https://www.linkedin.com/in/victor-eduardo-533954347" target="_blank" rel="noopener noreferrer"><span><small>rede profissional</small>💼 LinkedIn</span><span class="social-arrow" aria-hidden="true">↗</span></a>
+        <a id="email-link" class="social-link rv" style="--d:.2s" href="mailto:victortrabalho77877@gmail.com"><span><small>e-mail</small>✉️ victortrabalho77877@gmail.com</span><span class="social-arrow" aria-hidden="true">↗</span></a>      </div>
+    </div>
+  </section>
+</main>
+<footer class="footer wrap"><a class="brand" href="#inicio">victor<b>.</b>java</a><p>© <span id="year"></span> Victor Eduardo de Araujo Silva · feito com ☕, Ctrl+S e ajuda de IA 🤖</p><a href="#inicio">Voltar ao topo ↑</a></footer>
+<script>
+(()=>{
+const reduce=matchMedia('(prefers-reduced-motion:reduce)').matches;
+document.getElementById('year').textContent=new Date().getFullYear();
+// faixa de tecnologias: repete o conteúdo para o loop nunca deixar espaço vazio em telas largas
+const mq=document.querySelector('.marquee div');mq.innerHTML=mq.innerHTML.repeat(3);
+// menu mobile
+const tg=document.querySelector('.menu-toggle'),nav=document.getElementById('navigation');
+const closeMenu=()=>{nav.classList.remove('open');tg.setAttribute('aria-expanded',false)};
+tg.addEventListener('click',()=>{const o=nav.classList.toggle('open');tg.setAttribute('aria-expanded',o)});
+nav.addEventListener('click',e=>{if(e.target.tagName==='A')closeMenu()});
+addEventListener('keydown',e=>{if(e.key==='Escape'&&nav.classList.contains('open')){closeMenu();tg.focus()}});
+// barra de progresso + parallax dos stickers (um único listener, throttle com rAF)
+const bar=document.getElementById('progress'),st=[...document.querySelectorAll('.sticker')];
+let ticking=false;
+const onScroll=()=>{if(ticking)return;ticking=true;requestAnimationFrame(()=>{
+ const h=document.documentElement;
+ bar.style.transform='scaleX('+(h.scrollTop/(h.scrollHeight-h.clientHeight||1))+')';
+ if(!reduce){const y=Math.min(scrollY,900);st.forEach((s,i)=>s.style.transform='translateY('+y*(.08+i*.04)+'px) rotate('+y*.06+'deg)')}
+ ticking=false})};
+addEventListener('scroll',onScroll,{passive:true});onScroll();
+// reveal
+const rv=document.querySelectorAll('.rv');
+if(reduce||!('IntersectionObserver' in window)){rv.forEach(e=>e.classList.add('in','rvd'))}else{
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){const t=e.target;t.classList.add('in');setTimeout(()=>t.classList.add('rvd'),1000);io.unobserve(t)}}),{threshold:.15});
+rv.forEach((e,i)=>{e.style.setProperty('--r',(i%2?1:-1)*1.5+'deg');io.observe(e)})}
+// link ativo no menu
+const links=[...nav.querySelectorAll('a')];
+const so=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting)links.forEach(l=>l.classList.toggle('on',l.getAttribute('href')==='#'+e.target.id))}),{rootMargin:'-45% 0px -50% 0px'});
+document.querySelectorAll('section[id]').forEach(s=>so.observe(s));
+// tilt nos cards (responde ao mouse)
+if(!reduce&&matchMedia('(hover:hover)').matches)document.querySelectorAll('.tilt').forEach(c=>{
+c.addEventListener('pointermove',e=>{const r=c.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;c.style.transform='perspective(700px) rotateY('+x*8+'deg) rotateX('+-y*8+'deg)';c.style.transitionDelay='0s'});
+c.addEventListener('pointerleave',()=>{c.style.transform=''})});
+// contador de café
+let n=0;const cb=document.querySelector('.cafe'),cn=document.getElementById('cafes');
+cb.addEventListener('click',()=>{cn.textContent=++n;cb.classList.remove('pop');void cb.offsetWidth;cb.classList.add('pop')});
+// digitação do código
+const code=[
+'<span class="c">// quem sou eu, em Java</span>',
+'<span class="k">public class</span> <span class="f">Victor</span> {',
+'  <span class="k">String</span> foco = <span class="s">"Java ☕"</span>;',
+'  <span class="k">String</span> curso = <span class="s">"ADS no Senac 🎓"</span>;',
+'  <span class="k">boolean</span> buscandoEstagio = <span class="k">true</span>;',
+'',
+'  <span class="k">void</span> <span class="f">aprender</span>() {',
+'    <span class="k">while</span> (<span class="k">true</span>) <span class="f">evoluir</span>(); <span class="c">// 🚀</span>',
+'  }',
+'}'];
+const pre=document.getElementById('typed');
+if(reduce){pre.innerHTML=code.join('\n')}else{
+let li=0,ci=0;const caret='<span class="caret"></span>';
+const tick=()=>{
+ const done=code.slice(0,li).join('\n'),cur=code[li]||'';
+ // digita por texto visível, preservando as tags
+ let out='',vis=0,inTag=false;
+ for(const ch of cur){if(ch==='<')inTag=true;if(vis<ci||inTag)out+=ch;else break;if(ch==='>')inTag=false;if(!inTag&&ch!=='>')vis++}
+ const open=(out.match(/<span/g)||[]).length-(out.match(/<\/span>/g)||[]).length;
+ pre.innerHTML=(done?done+'\n':'')+out+'</span>'.repeat(Math.max(open,0))+caret;
+ const total=cur.replace(/<[^>]+>/g,'').length;
+ if(ci<total){ci++;setTimeout(tick,22)}else if(li<code.length-1){li++;ci=0;setTimeout(tick,180)}
+};
+setTimeout(tick,500)}
+})();
+</script>
+</body>
+</html>
